@@ -17,10 +17,8 @@ body {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
 	border: 1px solid;
 }
 
@@ -28,12 +26,13 @@ body {
 	font-weight: bold;
 	text-decoration: none;
 	color: black;
+	/*font-family: "Roboto", "Arial", sans-serif;*/
 }
 
 
 .fights {
 	padding: 10px;
-	margin-right: 200px;
+	margin-right: 150px;
 	border: 4px solid;
 	border-radius: 20px;
 }
@@ -47,7 +46,8 @@ body {
 .panel li {
 	display: inline;
 	list-style-type: none;
-	margin: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .panel li a {
@@ -70,3 +70,69 @@ body {
 	margin-right: 100px;
 }
 
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left_bar {
+	border: 1px solid;
+	height: 100vh;
+	width: 324px;
+	background: rgb(65,134,199);
+	background: linear-gradient(90deg, rgba(65,134,199,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+.header_root {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.root {
+	width: 100%;
+	height: 40px;
+	/*background-color: red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.file_system {
+	width: 90%;
+	height: 300px;
+	border: 1px solid;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.data {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*background-color: green;*/
+	width: 100%;
+	height: 100%;
+}
+
+/*
+.main_part div {
+	display: flex;
+	height: 300px;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 100px;
+}
+
+.main_part {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+*/
