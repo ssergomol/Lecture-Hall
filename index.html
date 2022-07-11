@@ -3,15 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
 	<link rel="stylesheet" href="front/css/main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<title>Lecture hall</title>
-</head>
-<body>
+</head> 
+<body class="main-content">
 	<div class="header">
 		<div class="logo">
-			<img src="front/images/books.png">
+			<img class="logo-pic" src="front/images/books.png">
 			<a class="hall" href="index.html">
 				<h2>
 				Lecture 
@@ -46,40 +47,50 @@
 	
 	<div class="content">
 		<div class="left_bar">
-			<div class="file_system">
-				<div class="header_root">
-					<img src="front/images/back_button.png">
-					<div class="root">
-						name
-					</div>
+			<div class="title-left-bar">
+				<div class="back-button-container">
+					<img class="back-button" src="front/images/back_button.png">
 				</div>
-				<div class="data">
-					file system!
-				</div>
+				<span class="lectures"> Лекции </span>
 			</div>
+				<a class="section" href="#">
+					1. Механика
+				</a>
+				<a class="section" href="#">
+					2. Термодинамика
+				</a>
+				<a class="section" href="#">
+					3. Электричество
+				</a>
+				<a class="section" href="#">
+					4. Оптика
+				</a>
+				<a class="section" href="#">
+					5. Квантовая физика
+				</a>
 		</div>
 		<div class="main_part">
-			<div>
-				<div>
-					Этот замечательный сайт для вас подготовили студенты в качестве своего pet-проекта
-				</div>
-				<div>
-					Ученье – свет, а неученье – тьма
-				</div>
+			<div class="quote">
+				Этот замечательный сайт для вас подготовили студенты в качестве своего pet-проекта
 			</div>
-			<div>
-				<div>
-					Квантмех, статфиз и диффуры
-					Денег будет две горы
-				</div>
-				<img src="front/images/1.jpg">
+			<div class="quote">
+				Ученье – свет, а неученье – тьма
 			</div>
-			<div>
-				<img src="front/images/2.jpg">
-				<div>
-					Кто не учит физику
-					Те дурачки и шизики.
-				</div>
+		
+			<div class="quote">
+				Квантмех, статфиз и диффуры
+				Денег будет две горы
+			</div>
+			<div class="img-container">
+				<img class="meme_1" src="front/images/1.jpg">
+			</div>
+			<div class="img-container">
+				<img class="meme_2" src="front/images/2.jpg">
+			</div>
+
+			<div class="quote"	>
+				Кто не учит физику
+				Те дурачки и шизики.
 			</div>
 		</div>
 	</div>
