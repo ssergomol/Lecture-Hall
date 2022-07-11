@@ -59,6 +59,12 @@ a.hall {
 	margin: 3px;
 }
 
+.fights:hover {
+	background-color: #F0F8FF;
+	transition: 0.1s;
+}
+
+
 .panel {
 	grid-column: 3;
 	display: flex;
@@ -79,6 +85,10 @@ a.hall {
 	text-decoration: none;
 	color: black;
 	font-size: 3vh;
+}
+
+.panel li a:hover {
+	text-decoration: underline black;
 }
 
 
@@ -113,6 +123,12 @@ img.back-button {
 	
 }
 
+img.back-button:hover {
+	background-color: #F0F8FF;
+	transition: 0.1s;
+	border-radius: 100%;
+}
+
 div.back-button-container {
 	grid-column: 1;
 	display: flex;
@@ -143,6 +159,11 @@ a.section {
 	text-decoration: none;
 	font-size: 3vh;
 	padding-left: 1vh;
+}
+
+a.section:hover {
+	background-color: #F0F8FF;
+	transition: 0.1s;
 }
 
 
@@ -207,4 +228,3 @@ div.quote {
 	margin: 2vh;
 	font-weight: bold;
 }
-
