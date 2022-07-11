@@ -98,7 +98,7 @@ a.hall {
 	grid-column: 1;
 	position: relative;
 	display: grid;
-	grid-template-rows: repeat(6, 6fr) 70%;
+	grid-template-rows: 1fr repeat(5, 2fr) 70%;
 	border-right: 1px solid;
 	bottom: 0px;
 	top: 0px;
@@ -109,7 +109,7 @@ a.hall {
 
 img.back-button {
 	max-width: 100%;
-	height: 50%;
+	height: 60%;
 	
 }
 
