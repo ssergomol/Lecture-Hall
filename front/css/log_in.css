@@ -141,7 +141,7 @@ a.hall {
 
 .form-container {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -185,6 +185,7 @@ a.hall {
     height: 40px;
     width: 70%;
     border: none;
+    margin-right: 2vh;
   }
   
   .form-input::placeholder {
