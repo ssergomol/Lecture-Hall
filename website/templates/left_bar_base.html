@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block styles %}
+{% endblock %}
+
+{% block fonts %}
+{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <div class="left_bar">
+            <div class="title-left-bar">
+                <div class="back-button-container">
+                    <img class="back-button" src="../static/images/back_button.png">
+                </div>
+                <span class="lectures"> Лекции </span>
+            </div>
+                <a class="section" href="#">
+                    1. Механика
+                </a>
+                <a class="section" href="#">
+                    2. Термодинамика
+                </a>
+                <a class="section" href="#">
+                    3. Электричество
+                </a>
+                <a class="section" href="#">
+                    4. Оптика
+                </a>
+                <a class="section" href="#">
+                    5. Квантовая физика
+                </a>
+        </div>
+
+        {% block main_part %}
+        {% endblock %}
+    </div>
+{% endblock %}
