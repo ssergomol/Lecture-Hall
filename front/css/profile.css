@@ -269,7 +269,20 @@ div.quote {
 	margin-top: 50px;
 }
 
-.personal_info li {
+.admin_options li {
+	background-color: rgba(153, 189, 223, 1);
+	border-radius: 8px;
+	padding: 5px;
+	border: 1px solid;
+}
+
+.info_panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info_panel li {
 	margin-bottom: 20px;
 	list-style-type: none;
 }
