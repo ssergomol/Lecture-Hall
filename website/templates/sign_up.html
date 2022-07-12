@@ -1,54 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="front/css/sign_up.css">
+{% extends "index.html" %}
+
+{% block styles %} 
+    <link rel="stylesheet" href="static/css/sign_up.css">    
+{% endblock %}
+
+{% block fonts %}
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
-	<title>Lecture hall</title>
-</head> 
-<body class="main-content">
-	<div class="header">
-		<div class="logo">
-			<img class="logo-pic" src="front/images/books.png">
-			<a class="hall" href="index.html">
-				<h2>
-				Lecture 
-				<br>
-				hall
-				</h2>	
-			</a>
-		</div>
-		<div class="right_header">
-			<div class="fights">
-				Участовать в физ боях!
-			</div>
-			<ul class="panel">
-				<li class="thick">
-				</li>
-				<li>
-					<a href="info.html">Инфо</a>
-				</li>
-				<li class="thick">
-				</li>
-				<li>
-					<a href="sign_up.html">Регистрация</a>
-				</li>
-				<li class="thick">
-				</li>
-				<li>
-					<a href="log_in.html">Вход</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	
-	<div class="content">
+{% endblock %}
+
+{% block content %}
+    <div class="main-container">
         <div class="log-in-container">
             <div class="sign-up-window">
                 <form method="POST" class="form">   
@@ -63,32 +26,32 @@
                     </div>   
 
                     <div class="form-container">
-                      <label for="password" class="form-label">Пароль</label>
-                      <input
+                    <label for="password" class="form-label">Пароль</label>
+                    <input
                         class="form-input"
                         type="password"
                         name="password"
                         placeholder="Придумайте пароль"
-                      />
+                    />
                     </div>
 
                     <div class="form-container">
                         <label for="password" class="form-label">Пароль</label>
                         <input
-                          class="form-input"
-                          type="password"
-                          name="password"
-                          placeholder="Подтвердите пароль"
+                        class="form-input"
+                        type="password"
+                        name="password"
+                        placeholder="Подтвердите пароль"
                         />
                     </div>
 
                     <div class="form-container">
                         <label for="email" class="form-label">Почта</label>
                         <input
-                          class="form-input"
-                          type="email"
-                          name="email"
-                          placeholder="Введите почту"
+                        class="form-input"
+                        type="email"
+                        name="email"
+                        placeholder="Введите почту"
                         />
                     </div>
                     
@@ -98,12 +61,11 @@
                             Зарегистрироваться
                         </button>
                         <label class="form-input-login" for="form-input-btn">
-                            Уже есть аккаунт? <a href='./log_in.html'>Войдите</a>
+                            Уже есть аккаунт? <a href="login">Войдите</a>
                         </label>
                     </div>
-                  </form>
+                </form>
             </div>
         </div>
-	</div>
-</body>
-</html>
+    </div>
+{% endblock %}

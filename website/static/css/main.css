@@ -6,6 +6,7 @@ body.main-content {
 	margin: 0px;
 	bottom: 0px;
 	top: 0px;
+	width: 100vw;
 }
 
 .header {
