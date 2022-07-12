@@ -170,10 +170,11 @@ a.hall {
   
   .form-label {
     display: inline-block;
-    font-size: 2.5vh;
+    font-size: 2vh;
     margin-bottom: 6px;
     color: #fff;
     margin-right: 5%;
+    font-family: 'Chakra Petch', sans-serif;
   }
 
   .form-input {
