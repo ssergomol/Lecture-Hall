@@ -102,14 +102,18 @@ a.hall {
 
 .content {
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 220px 1fr;
+	min-height: 100vh;
+	max-width: 100vw;
 }
 
 .left_bar {
 	grid-column: 1;
 	position: relative;
-	display: grid;
-	grid-template-rows: 1fr repeat(5, 2fr) 70%;
+	display: flex;
+	flex-direction: column;
+	/* display: grid;
+	grid-template-rows: 1fr repeat(5, 2fr) 70%; */
 	border-right: 1px solid;
 	bottom: 0px;
 	top: 0px;
@@ -151,9 +155,11 @@ div.back-button-container {
 	align-items: center;
 	font-size: 3vh;
 	padding-left: 1vh;
+	padding: 0.25em;
 }
 
 a.section {
+	padding: 1em;
 	display: flex;
 	align-items: center;
 	color: black;
@@ -167,41 +173,13 @@ a.section:hover {
 	transition: 0.1s;
 }
 
-
-.header_root {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.root {
-	width: 100%;
-	height: 40px;
-	/*background-color: red;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-/*
-.main_part div {
-	display: flex;
-	height: 300px;
-	flex-direction: row;
-	justify-content: flex-end;
-	padding: 100px;
-}
-*/
-
 .main_part {
 	display: grid;
 	grid-template-columns: 2fr 2fr;
 	grid-template-rows: 3fr 3fr 3fr;
-	margin-top: 2vh;
-	margin-left: 3vh;
+	padding-top: 2vh;
+	padding-left: 3vh;
+	max-width: 100vw;
 }
 
 .img-container {
@@ -226,6 +204,6 @@ div.quote {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-	margin: 2vh;
+	padding: 2vh;
 	font-weight: bold;
 }
