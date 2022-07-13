@@ -16,3 +16,8 @@ def info():
 @login_required
 def profile():
     return render_template("profile.html", user=current_user)
+
+@views.route('/add_lecture')
+@login_required
+def add_lecture():
+    return render_template("add_lecture.html", user=current_user)

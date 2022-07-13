@@ -1,0 +1,74 @@
+.main-field {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.lecture-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.input-label {
+    font-size: 1em;
+    padding-bottom: 0.5em;
+}
+
+.form-input {
+    display: block;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    height: 1.6em;
+    width: 40vw;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.lecture-text-input {
+    display: block;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    width: 70vw;
+    height: 50em
+}
+
+.form-input-btn {
+    height: 2em;
+    border-radius: 2px;
+    background: #bfc4c7;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+}
+
+.form-input-btn:hover {
+    cursor: pointer;
+    background:  #529e4e;
+    transition: all 0.15s ease-out;
+}
+
+.lecture-container-btn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5em;
+    padding-left: 2em;
+
+}
+
+.lecture-container-input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
