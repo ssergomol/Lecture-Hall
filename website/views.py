@@ -13,3 +13,9 @@ def info():
 @views.route('/profile')
 def profile():
     return render_template("profile.html")
+
+
+@views.route('/info/<pep>')
+def info_pep(pep):
+    print("\n\n\n", pep, "\n\n\n")
+    return render_template("info.html")

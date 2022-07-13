@@ -9,6 +9,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
 	{%block fonts%}{%endblock%}
 	<title>Lecture hall</title>
 </head> 
@@ -48,6 +59,54 @@
 			</ul>
 		</div>
 	</div>
+
+	<!-- {% with messages = get_flashed_messages(with_categories=true) %}
+	{% if messages %}
+		{% for category, message in messages %}
+			{% if category == 'error' %}
+			<div class="alert alert-danger alter-dismissable fade show" role="alert">
+				{{ message }}
+				<button type="button" class="close" data-dismiss="alert">
+					<span aria-hidden="true">
+						&times;
+					</span>
+				</button>
+			</div>
+			{% else %}
+			<div class="alert alert-success alter-dismissable fade show" role="alert">
+				{{ message }}
+				<button type="button" class="close" data-dismiss="alert">
+					<span aria-hidden="true">
+						&times;
+					</span>
+				</button>
+			</div>
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+	{% endwith %} -->
+
+
+
+	{% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+    <div class="alert alert-danger alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% else %}
+    <div class="alert alert-success alter-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+
 
 	{% block content %}
 	{% endblock %}
