@@ -202,3 +202,25 @@ div.quote {
 	padding: 2vh;
 	font-weight: bold;
 }
+
+.alert-success-form {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	background-color: #75ad6d;
+	width: 100vw;
+	height: 2em;
+	font-size: 1em;
+	align-items: center;
+}
+
+.alert-error-form {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	background-color: #cd7e7e;
+	width: 100vw;
+	height: 2em;
+	font-size: 1em;
+	align-items: center;
+}
