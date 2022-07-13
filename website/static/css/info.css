@@ -1,0 +1,8 @@
+.authors {
+	display: flex;
+	justify-content: space-around;
+}
+
+.author {
+	padding: 50px;
+}

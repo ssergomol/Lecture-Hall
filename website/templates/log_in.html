@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+
+{% block styles %}
+	<link rel="stylesheet" href="static/css/log_in.css">
+	<link rel="stylesheet" href="static/css/main.css">
+{% endblock %}
+
+{% block fonts %}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<div class="main-container">
+		<div class="log-in-container">
+			<div class="log-in-window">
+				<form method="POST" class="form">   
+					<div class="form-container">              
+						<label for="username" class="form-label">Логин</label>
+						<input
+							class="form-input"
+							type="text"
+							name="username"
+							placeholder="Введите имя пользователя"
+						/>
+					</div>   
+
+					<div class="form-container">
+					<label for="password" class="form-label">Пароль</label>
+					<input
+						class="form-input"
+						type="password"
+						name="password"
+						placeholder="Введите пароль"
+					/>
+					</div>
+					<div class="form-container-btn">
+						<button class="form-input-btn" type="submit">
+						Войти
+						</button>
+						<label class="form-input-login" for="form-input-btn">
+							Пока нет аккаунта? <a href="signup">Зарегистрируйтесь</a>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{%endblock%}

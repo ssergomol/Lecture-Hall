@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/css/main.css">
+	{%block styles%}
+	{%endblock%}
+	<link rel="stylesheet" href="../static/css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	{%block fonts%}{%endblock%}
+	<title>Lecture hall</title>
+</head> 
+<body class="main-content">
+	<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+	<div class="header">
+		<div class="logo">
+			<img class="logo-pic" src="../static/images/books.png">
+			<a class="hall" href="/">
+				<h2>
+				Lecture 
+				<br>
+				hall
+				</h2>	
+			</a>
+		</div>
+		<div class="right_header">
+			<div class="fights">
+				Участовать в физ боях!
+			</div>
+			<ul class="panel">
+				<li class="thick">
+				</li>
+				<li>
+					<a href="info">Инфо</a>
+				</li>
+				<li class="thick">
+				</li>
+				<li>
+					<a href="signup">Регистрация</a>
+				</li>
+				<li class="thick">
+				</li>
+				<li>
+					<a href="login">Вход</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	{% block content %}
+	{% endblock %}
+
+</body>
+</html>

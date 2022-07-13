@@ -1,0 +1,108 @@
+.profile_content {
+	display: flex;
+	padding-top: 2vh;
+	padding-left: 3vh;
+	flex-direction: column;
+	
+}
+
+.profile_img {
+	height: 50px;
+}
+
+.profile {
+	display: flex;
+}
+
+.profile_photo_name {
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	align-items: center;
+	/*text-align: center;*/
+}
+
+.profile_photo_name div {
+	text-align: center;
+}
+
+.profile_photo {
+	height: 300px;
+	margin: 50px 50px 20px 50px;
+}
+
+.personal_info {
+	margin-top: 50px;
+}
+
+.admin_options li {
+	background-color: rgba(153, 189, 223, 1);
+	border-radius: 8px;
+	padding: 5px;
+	border: 1px solid;
+}
+
+.info_panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info_panel li {
+	margin-bottom: 20px;
+	list-style-type: none;
+}
+
+.status {
+	display: flex;
+}
+
+.status img {
+	margin-left: 20px;
+}
+
+.horizontal_thick {
+	background-color: black;
+	width: 90%;
+	height: 2px;
+	margin-left: 5%;
+	margin-top: 20px;
+}
+
+.topic {
+	display: flex;
+}
+
+.topic img {
+	margin: 20px 50px 20px 0px;
+}
+
+.naming {
+	margin: 20px 20px 20px 50px;
+	font-weight: bold;
+}
+
+
+.find {
+	margin: 20px 50px 20px 50px;
+}
+
+
+.title-left-bar{
+	grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.lectures {
+	display: flex;
+	grid-column: 2;
+	justify-content: start;
+	align-items: center;
+	font-size: 3vh;
+	padding-left: 1vh;
+	padding-right: 1vh;
+}
+
+.title-left-bar img {
+	max-width: 100%;
+	height: 60%;
+}
+
