@@ -150,7 +150,7 @@ def repr_dfs(node, res):
 
 
 
-if __name__ == '__main__':
-	tree = IndexTree()
-	tree.add_defalut_sections()
-	print(tree.__repr__())
+# if __name__ == '__main__':
+tree = IndexTree()
+tree.add_defalut_sections()
+	# print(tree.__repr__())

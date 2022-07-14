@@ -8,7 +8,9 @@
 
 {% block content %}
     <div class="content">
-        <div class="left_bar">
+
+        {% block left_bar %}
+<!--         <div class="left_bar">
             <div class="title-left-bar">
                 <div class="back-button-container">
                     <img class="back-button" src="../static/images/back_button.png">
@@ -30,7 +32,9 @@
                 <a class="section" href="#">
                     5. Квантовая физика
                 </a>
-        </div>
+        </div> -->
+        {% endblock %}
+
 
         {% block main_part %}
         {% endblock %}
