@@ -1,7 +1,8 @@
-function change_path(child_node_id) {
+function changePath(node_id) {
+	console.log( 1543 );
 	fetch("/lectures", {
 		method: "POST",
-		body: JSON.stringify( {child_node_id: child_node_id} ),
+		body: JSON.stringify({ node_id: node_id }),
 	}).then((_res) => {
 		window.location.href = "/lectures";
 	});

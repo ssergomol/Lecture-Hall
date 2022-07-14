@@ -29,12 +29,12 @@
 <div class="left_bar">
     <div class="title-left-bar">
         <div class="back-button-container">
-            <img class="back-button" src="../static/images/back_button.png">
+            <img class="back-button" src="../static/images/back_button.png" onClick="changePath({{ index_tree.current_node.parent_node.id }})">
         </div>
         <span class="lectures"> {{ index_tree.current_node.name }} </span>
     </div>
     	{% for child_node in index_tree.current_node.children_nodes %}
-	        <a class="section" href="#">
+	        <a class="section" href="/lectures">
 	            {{ child_node.id }} {{ ". "+child_node.name }}
 	        </a>
         {% endfor %}
