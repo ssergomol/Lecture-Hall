@@ -17,7 +17,10 @@
             />
         </div>
         <div class="input-container">
-            <label for="parent-section" class="input-label">Название раздела, к которому принадлежит документ</label>
+            <label 
+            for="parent-section" 
+            class="input-label">Название категории, к которой будет принадлежать документ
+            </label>
             <input
             class="form-input"
             type="text"
@@ -27,12 +30,14 @@
         </div>
         <div class="lecture-container-input">
             <label for="lecture-text" class="input-label">Содержимое документа</label>
-            <input
+            <textarea
+            rows="30"
+            cols="60"
             class="lecture-text-input"
             type="text"
             name="lecture-text"
             id="lecture-text"
-            />
+            ></textarea>
         </div>
         <div class="lecture-container-btn">
             <button class="form-input-btn" type="submit">

@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from .models import User
+from .models import User, Section
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
@@ -13,7 +13,9 @@ def login():
         password = request.form.get('password')
 
         user = User.query.filter_by(username=username).first()
-        if user:
+        if not (username and password):
+            flash('Заполните все поля', category='error')
+        elif user:
             if check_password_hash(user.password, password):
                 flash('Вход выполнен успешно!', category='success')
                 login_user(user, remember=True)
@@ -34,7 +36,10 @@ def signup():
         password2 = request.form.get('password2')
 
         user = User.query.filter_by(username=username).first()
-        if user:
+        
+        if not (email and username and password1 and password2):
+            flash('Заполните все поля', category='error')
+        elif user:
             flash('Такое имя пользователя уже существует', category='error')
         elif len(email) < 4:
             flash('Почта должна содержать более 3 символов', category='error')

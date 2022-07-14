@@ -141,6 +141,7 @@ div.back-button-container {
 	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 100%;
 	border-bottom: 1px solid;
+	height: 1.8em;
 }
 
 .lectures {
@@ -209,7 +210,7 @@ div.quote {
 	position: absolute;
 	background-color: #75ad6d;
 	width: 100vw;
-	height: 2em;
+	height: 1.8em;
 	font-size: 1em;
 	align-items: center;
 }
@@ -220,7 +221,7 @@ div.quote {
 	position: absolute;
 	background-color: #cd7e7e;
 	width: 100vw;
-	height: 2em;
+	height: 1.8em;
 	font-size: 1em;
 	align-items: center;
 }
