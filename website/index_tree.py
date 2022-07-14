@@ -84,7 +84,16 @@ defalut_sections = {
 		},
 		{
 			"name": "Термодинамика",
-			"children": []
+			"children": [
+				{
+					"name": "Идеальный газ",
+					"children": []
+				},
+				{
+					"name": "Теорема Карно",
+					"children": []
+				}
+			]
 		},
 		{
 			"name": "Электричество",
