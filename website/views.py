@@ -8,9 +8,8 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-	sections = Section.query.all()
 	parent = Section.query.filter_by(id=1).first()
-	return render_template("home.html", user=current_user, sections=sections, parent_section=parent)
+	return render_template("home.html", user=current_user, parent_section=parent)
 
 @views.route('/info')
 def info():
@@ -19,9 +18,8 @@ def info():
 @views.route('/profile')
 @login_required
 def profile():
-	sections = Section.query.all()
 	parent = Section.query.filter_by(id=1).first()
-	return render_template("profile.html", user=current_user, sections=sections, parent_section=parent)
+	return render_template("profile.html", user=current_user, parent_section=parent)
 
 @views.route('/add_lecture', methods=['GET', 'POST'])
 @login_required
@@ -54,10 +52,10 @@ def add_lecture():
 				print(f"{section.title} - Children: {section.children}\n\n")
 			return redirect(url_for('views.profile'))
 
-	sections = Section.query.all()
 	parent = Section.query.filter_by(id=1).first()
-	return render_template("add_lecture.html", user=current_user, sections=sections, parent_section=parent)
+	return render_template("add_lecture.html", user=current_user, parent_section=parent)
 
-@views.route("`/lectures/<id>`", methods=['GET'])
+@views.route("/lectures/<id>", methods=['GET'])
 def lectures(id):
-    return render_template("lecture.html", )
+    parent = Section.query.filter_by(id=id).first()
+    return render_template("lecture.html", user=current_user, parent_section=parent)

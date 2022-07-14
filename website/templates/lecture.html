@@ -1,1 +1,17 @@
 {% extends "left_bar_base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="../static/css/lecture.css">
+{% endblock %}
+
+{% block fonts %}
+{% endblock %}
+
+{% block main_part %}
+<div class="lecture-content">
+    <div class="lecture">
+        <div class="title">{{parent_section.title}}</div>
+        <div class="text">{{parent_section.data}}
+    </div> 
+</div>
+{% endblock %}
