@@ -57,7 +57,7 @@ def add_lecture():
 
 @views.route("/lectures/<id>", methods=['GET'])
 def lectures(id):
-    if int(id) == 1:
+    if id == "None" or id == "1":
         return redirect(url_for("views.home"))
     parent = Section.query.filter_by(id=id).first()
     return render_template("lecture.html", user=current_user, parent_section=parent)
