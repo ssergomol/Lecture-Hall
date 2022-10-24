@@ -1,33 +1,29 @@
 {% extends "left_bar_base.html"%}
 
 {% block styles %}
-<link rel="stylesheet" href="static/css/profile.css">	
+<link rel="stylesheet" href="../static/css/profile.css">	
 {% endblock %}
 
 {% block main_part %}
 <div class="profile_content">
-	
-	
-		
-	
 		<div class="profile">
 			<div class="profile_photo_name">
-				<img class="profile_photo" src="static/images/user_logo.png">
+				<img class="profile_photo" src="../static/images/user_logo.png">
 				<div>
-					Имя
+					{{ user.username }}
 				</div>
 			</div>
 			<div class="info_panel">
 				<ul class="personal_info">
 					<li>
-						Рейтинг: 100%
+						Рейтинг: {{ user.rank }}%
 					</li>
 					<li class="status">
 						<div>
-							Статус: Студен
+							Статус: {{ user.status }}
 							"повысить"	
 						</div>
-						<img src="static/images/upgrade.png">
+						<img src="../static/images/upgrade.png">
 					</li>
 				</ul>
 				<ul class="admin_options">
@@ -47,13 +43,13 @@
 				<div class="naming">
 					Публикации
 				</div>
-				<img src="static/images/plus1.png">
+				<a href="/add_lecture">
+					<img src="../static/images/plus1.png">
+				</a>
 				<textarea class="find">
 					Поиск
 				</textarea>
 			</div>
 		</div>
-	
-
 </div>
 {% endblock %}

@@ -1,0 +1,49 @@
+{% extends "left_bar_base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="../static/css/add_lecture.css">
+{% endblock %}
+
+{% block main_part %}
+<div class="main-field">
+    <form method="POST" class="lecture-form">
+        <div class="input-container">
+            <label for="title" class="input-label">Название лекции или раздела</label>
+            <input
+            class="form-input"
+            type="text"
+            name="title"
+            id="title"
+            />
+        </div>
+        <div class="input-container">
+            <label 
+            for="parent-section" 
+            class="input-label">Название категории, к которой будет принадлежать документ
+            </label>
+            <input
+            class="form-input"
+            type="text"
+            name="parent-section"
+            id="parent-section"
+            />
+        </div>
+        <div class="lecture-container-input">
+            <label for="lecture-text" class="input-label">Содержимое документа</label>
+            <textarea
+            rows="30"
+            cols="60"
+            class="lecture-text-input"
+            type="text"
+            name="lecture-text"
+            id="lecture-text"
+            ></textarea>
+        </div>
+        <div class="lecture-container-btn">
+            <button class="form-input-btn" type="submit">
+                Создать
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

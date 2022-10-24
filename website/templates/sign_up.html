@@ -1,8 +1,7 @@
 {% extends "index.html" %}
 
 {% block styles %} 
-    <link rel="stylesheet" href="static/css/sign_up.css">   
-    <link rel="stylesheet" href="static/css/main.css"> 
+    <link rel="stylesheet" href="../static/css/sign_up.css">
 {% endblock %}
 
 {% block fonts %}
@@ -27,21 +26,23 @@
                     </div>   
 
                     <div class="form-container">
-                    <label for="password" class="form-label">Пароль</label>
+                    <label for="password1" class="form-label">Пароль</label>
                     <input
                         class="form-input"
                         type="password"
-                        name="password"
+                        name="password1"
+                        id="password1"
                         placeholder="Придумайте пароль"
                     />
                     </div>
 
                     <div class="form-container">
-                        <label for="password" class="form-label">Пароль</label>
+                        <label for="password2" class="form-label">Пароль</label>
                         <input
                         class="form-input"
                         type="password"
-                        name="password"
+                        name="password2"
+                        id="password2"
                         placeholder="Подтвердите пароль"
                         />
                     </div>
@@ -56,7 +57,8 @@
                         />
                     </div>
                     
-
+                    <div class="form-line"></div>
+                    
                     <div class="form-container-btn">
                         <button class="form-input-btn" type="submit">
                             Зарегистрироваться
